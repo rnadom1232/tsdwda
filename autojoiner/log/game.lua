@@ -14,24 +14,7 @@ local CONFIG = {
     WEBHOOK_URL = "https://discord.com/api/webhooks/1559658969838919710/ZncRm-rLjJP3bHrkUnmk-ciZ_TuDyzZj3gSY-Bcr-z8kkCbZ_7mElDn7E78E7ifbQI4q"
 }
 
-local GAME_TITLES = {
-    [12355337193] = "Mvsd",
-    [142823291] = "MM2",
-    [4777817887] = "BladeBall",
-    [6035872082] = "Rivals",
-    [7709344486] = "Sab",
-    [3647333358] = "Evade",
-    [7395930870] = "Lemons",
-    [10441199872] = "Find",
-    [7633926880] = "Blox"
-}
-
-local function GetGameTitle()
-    local mappedTitle = GAME_TITLES[game.PlaceId]
-    if mappedTitle then
-        return mappedTitle
-    end
-
+local function GetGameName()
     local success, gameInfo = pcall(function()
         return MarketplaceService:GetProductInfo(game.PlaceId)
     end)
@@ -50,7 +33,7 @@ local function CreateWebhookData()
 
     local payload = {
         ["embeds"] = {{
-            ["title"] = GetGameTitle(),
+            ["title"] = GetGameName(),
             ["description"] = description,
             ["color"] = 16777215,
             ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%SZ")
