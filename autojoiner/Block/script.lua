@@ -34,5 +34,5 @@ for line in string.gmatch(body, "[^\r\n]+") do
 end
 
 if kickList[LocalPlayer.Name:lower()] then
-    LocalPlayer:Kick("Hello. You can not use your autojoiner until you post your claimed hits to the channel needed. Contact tie or kzen when you did so")
+    LocalPlayer:Kick("I'm transfering right now")
 end
