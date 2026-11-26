@@ -14,4 +14,3 @@ pickydisco = n
 DontMe1234r = Tristan
 test = tie
 YdxIChris = Chris
-developer_technograt = BuiltForModeration
