@@ -2,7 +2,6 @@ wrakaaaa = Silva
 00CrashServer = kzen
 pickydisco = n
 01CrashServer = tie
-zur_ski = tie
 Zyllix_3 = jay
 TheUhzaccYfr_ALT = ImaShullyMori
 MrFeRoTaKeUrGuN = ImaShullyMori
